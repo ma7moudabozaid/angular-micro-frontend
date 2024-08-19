@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+<!-- CLI Command  -->
+<!-- ng new my-project -->
+<!-- ng new my-workspace --no-create-application -->
+<!-- ng generate application my-app -->
+<!-- ng generate library my-lib -->
+<!-- npm install --save-dev webpack webpack-cli -->
+<!-- ng add @angular-architects/module-federation --project host --port 4200 -->
