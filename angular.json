@@ -35,9 +35,9 @@
 							"projects/host/src/styles.scss"
 						],
 						"scripts": [],
-						"ssr": {
-							"entry": "projects/host/server.ts"
-						},
+						// "ssr": {
+						// 	"entry": "projects/host/server.ts"
+						// },
 						"main": "projects/host/src/main.ts",
 						"extraWebpackConfig": "projects/host/webpack.config.js",
 						"commonChunk": false
@@ -143,9 +143,9 @@
 							"projects/mfe/src/styles.scss"
 						],
 						"scripts": [],
-						"ssr": {
-							"entry": "projects/mfe/server.ts"
-						},
+						// "ssr": {
+						// 	"entry": "projects/mfe/server.ts"
+						// },
 						"main": "projects/mfe/src/main.ts",
 						"extraWebpackConfig": "projects/mfe/webpack.config.js",
 						"commonChunk": false
