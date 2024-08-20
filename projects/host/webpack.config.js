@@ -38,7 +38,7 @@ module.exports = {
 
       // For hosts (please adjust)
       remotes: {
-        mfe: "mfe@http://localhost:4300/remoteEntry.js",
+        mfe: "mfe@https://angular-micro-frontend-mfe.vercel.app/remoteEntry.js",
       },
 
       shared: share({
