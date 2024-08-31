@@ -2,7 +2,9 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 
+// const MFE_APP_URL = 'http://localhost:4300/remoteEntry.js';
 const MFE_APP_URL = 'https://angular-micro-frontend-mfe.vercel.app/remoteEntry.js';
+// const MFE_APP_URL = '`${environment.mfe.mfe1}/remoteEntry.js`';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,22 +24,10 @@ export const routes: Routes = [
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
+        // remoteName: 'products',
         remoteEntry: MFE_APP_URL,
         exposedModule: './ProductsComponent',
       }).then((m) => m.ProductsComponent),
   },
 
-  // {
-  //   path: 'products',
-  //   loadChildren: () => {
-  //     return loadRemoteModule({
-  //       type: 'module',
-  //       remoteEntry: MFE_APP_URL,
-  //       // remoteName: 'mfe',
-  //       exposedModule: './ProductsComponent',
-  //     })
-  //       .then((m) => m.ProductsComponent)
-  //       .catch((err) => console.log(err));
-  //   },
-  // },
 ];
