@@ -15,20 +15,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "paths": {
-      "services": [
-        "./dist/services"
-      ],
-      "shared-lib": [
-        "./projects/shared-lib/src/public-api.ts"
-      ]
+      "shared-lib": ["./projects/shared-lib/src/public-api.ts"]
     },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
